@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>one page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="utf-8">
+    <script src="snurra.js"></script>
+  </head>
+  <body>
+    <form action="snurra.php" method="POST">
+      <ledgend>Vinterförvaring</ledgend>
+      <p>båtlängd</p>
+      <input type="text" name="length" placeholder="längd" id="length">
+      <p>båtbredd</p>
+      <input type="text" name="width" placeholder="längd" id="width">
+      <p>placering</p>
+      <p>inomhus</p>
+      <input type="checkbox" name="inside" id="inside">
+      <p>utomhus</p>
+      <input type="checkbox" name="outside" id="outside">
+      <p>täckning med krymplast</p>
+      <input type="checkbox" name="plastic" id="outside">
+      <p>upptagning och sjösättning</p>
+      <input type="checkbox" name="upptagning" value="upptagning" id="outside">
+      <p>konservering av motorer</p>
+      <input type="checkbox" name="motorer" id="outside">
+      <select name="antal">
+        <option value="0">antal motorer</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <p>konservering av septitank</p>
+      <input type="checkbox" name="sept" id="outside">
+      <p>batterier</p>
+      <input type="checkbox" name="batterier" value="batterier" id="outside">
+      <p>konservering färskvattensytstem</p>
+      <input type="checkbox" name="vatten" value="vatten" id="outside">
+      <p>bottentvätt</p>
+      <input type="checkbox" name="wash" value="wash" id="outside">
+      <input type="submit" name="submit" value="räkna ut pris" id="outside">
+    </form>
+  </body>
+</html>

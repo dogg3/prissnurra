@@ -1,0 +1,47 @@
+doctype html
+html
+	head
+		title one page
+		link(rel="stylesheet", href="style.css", type="text/css")
+		meta(charset="utf-8")
+		script(src="snurra.js")
+	body
+		form(action="snurra.php" method="POST")
+			ledgend Vinterförvaring
+			p båtlängd
+			input(type="text" name="length" placeholder="längd")#length
+			p båtbredd
+			input(type="text" name="width" placeholder="längd")#width
+			p placering
+			p inomhus
+			input(type="checkbox" name="inside")#inside
+			p utomhus
+			input(type="checkbox" name="outside")#outside
+			p täckning med krymplast
+			input(type="checkbox" name="plastic")#outside
+			p upptagning och sjösättning
+			input(type="checkbox" name="upptagning"  value="upptagning")#outside
+			p konservering av motorer
+			input(type="checkbox" name="motorer")#outside
+			select(name="antal")
+				option(value="0") antal motorer
+				option(value="1") 1
+				option(value="2") 2
+				option(value="3") 3
+			p konservering av septitank
+			input(type="checkbox" name="sept")#outside
+			p batterier
+			input(type="checkbox" name="batterier"  value="batterier")#outside
+			p konservering färskvattensytstem
+			input(type="checkbox" name="vatten"  value="vatten")#outside
+			p bottentvätt
+			input(type="checkbox" name="wash"  value="wash")#outside
+			input(type="submit" name="submit"  value="räkna ut pris")#outside
+
+ 
+ 
+			
+
+
+
+
